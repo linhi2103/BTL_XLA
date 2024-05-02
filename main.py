@@ -55,8 +55,9 @@ def process(current):
     btn[current].configure(relief=SUNKEN)
 
     start_time = time.time()
-    end_time = time.time()
     cv_final = listFunc[current](cv_img)[0]
+    end_time = time.time()
+    
     
     print('Thời gian thực hiện phép %s là %f ms' %
           (listItem[current], (end_time-start_time)*1000))
